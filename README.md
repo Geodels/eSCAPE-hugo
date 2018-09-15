@@ -1,7 +1,7 @@
 # eSCAPE-hugo
 
 
-Hugo front-end for **eSCAPE website**
+Hugo front-end for **eSCAPE website** https://escape-model.github.io/
 
 + Local build:
 
