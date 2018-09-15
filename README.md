@@ -1,2 +1,3 @@
-# eSCAPE-model
-eSCAPE website
+# eSCAPE-hugo
+
+Hugo front-end for eSCAPE-model
