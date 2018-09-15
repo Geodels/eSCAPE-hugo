@@ -6,13 +6,13 @@ Hugo front-end for **eSCAPE website**
 + Local build:
 
 ```bash
-hugo server -D
+./hugo server -D
 ```
 
 + Creating public website:
 
 ```bash
-hugo
+./hugo
 ```
 
 + Commit to Github Page
