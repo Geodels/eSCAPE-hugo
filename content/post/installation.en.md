@@ -172,8 +172,8 @@ Here is an example of PBS job for `Artemis` HPC (USyD):
 # Project
 #PBS -P BGH
 
-# 40 CPUs
-#PBS -l select=48:ncpus=8:mpiprocs=8:mem=8GB
+# 64 CPUs
+#PBS -l select=8:ncpus=8:mpiprocs=8:mem=8GB
 
 # Time limit
 #PBS -l walltime=10:00:00
@@ -186,7 +186,7 @@ cd $PBS_O_WORKDIR
 cd earth
 
 # Launching the job!
-mpirun -np 384 python run_espace.py
+mpirun -np 64 python run_espace.py
 ```
 
 with `run_espace.py` a python script calling **eSCAPE** function:
