@@ -11,7 +11,7 @@ paginatePath = "page"
 theme = "hugo-material-blog"
 
 # Copyright, appears in the footer
-copyright = "Author: Tristan Salles - School of Geosciences - The University of Sydney"
+copyright = "Tristan Salles - School of Geosciences - The University of Sydney"
 
 # Links format
 [permalinks]
