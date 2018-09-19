@@ -19,7 +19,7 @@ A typical file will look like this:
 ***
 
 ```YAML
-name: Description of the what is going to be done in this simulation...
+name: Description of the your simulation...
 
 domain:
     filename: ['data/inputfileparameters.vtk','Z']
@@ -80,10 +80,10 @@ Follows the optional forcing conditions:
 Then the parameters for the surface processes to simulate:
 
 + `spl`: for the _stream power law_ with a unique parameter `Ke` representing the The erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient _m_ and _n_ are fixed in this version and take the value 0.5 & 1 respectively.
-+ `diffusion`: hillslope, stream and marine diffusion coefficients. `hillslopeK` sets the _simple creep_ transport law which states that transport rate depends linearly on topographic gradient. River transported sediment trapped in inland depressions or  internally draining basins are diffused using the coefficient (`streamK`). The marine sediment are transported based on a diffusion coefficient `oceanK`. The parameter `maxIT` specifies the maximum number of steps used for diffusing sediment during any given time interval `dt`. 
++ `diffusion`: hillslope, stream and marine diffusion coefficients. `hillslopeK` sets the _simple creep_ transport law which states that transport rate depends linearly on topographic gradient. River transported sediment trapped in inland depressions or  internally draining basins are diffused using the coefficient (`streamK`). The marine sediment are transported based on a diffusion coefficient `oceanK`. The parameter `maxIT` specifies the maximum number of steps used for diffusing sediment during any given time interval `dt`.
 
 Finally, you will need to specify the output folder:
 
-+ `output`: with `dir` the directory name and the option `makedir` that gives the possible to delete any existing output folder with the same name (if set to False) or to create a new folder with the give `dir` name plus a number at the end (e.g. outputDir_1 if set to True)
++ `output`: with `dir` the directory name and the option `makedir` that gives the possible to delete any existing output folder with the same name (if set to False) or to create a new folder with the give `dir` name plus a number at the end (e.g. outputDir_XX if set to True with XX the run number)
 
 ***
