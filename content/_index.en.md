@@ -1,6 +1,6 @@
 ---
 title: "Home"
-cover_image: "images/image3.jpeg"
+cover_image: "images/image0.jpeg"
 botcover_image: "images/earthtopo1.gif"
 ---
 

@@ -11,7 +11,7 @@ weight: 10
 cover_image: "images/earthdepo1.gif"
 ---
 
-To get some additional info in regards to how to use **eSCAPE** a series of examples and tutorials is provided in the docker container (`Geodels escape-docker`) and is also available for  download from the [eSCAPE-demo](https://github.com/Geodels/eSCAPE-demo) repository.
+To get some additional info in regards to how to use **eSCAPE** a series of examples and tutorials is provided in the docker container (`Geodels escape-docker`) and is also available for  download from the [**eSCAPE-demo**](https://github.com/Geodels/eSCAPE-demo) repository.
 
 ##### Usage
 
@@ -66,20 +66,13 @@ model.destroy()
 
 ##### Examples...
 
+Check out the [**eSCAPE-demo**](https://github.com/Geodels/eSCAPE-demo) repository.
 
-###### 1- Synthetic model
+###### 1- Synthetic model - repo - `mountain`
 
-+ repo - `mountain`
-
-###### 2- Regional model
-
-+ repo - `bluemountains`
+###### 2- Regional model - repo - `bluemountains`
 
 
-###### 3- Continental model
+###### 3- Continental model - repo - `australia`
 
-+ repo - `australia`
-
-###### 4- Global model
-
-+ repo - `earth`
+###### 4- Global model - repo - `earth`
