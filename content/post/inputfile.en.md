@@ -19,7 +19,7 @@ A typical file will look like this:
 ***
 
 ```YAML
-name: Description of the your simulation...
+name: Description of the simulation...
 
 domain:
     filename: ['data/inputfileparameters.vtk','Z']
