@@ -15,7 +15,7 @@ cover_image: "images/escapezoom.jpg"
 
 For installation information and documentation visit our Github [**wiki page**](https://github.com/Geodels/eSCAPE/wiki) which provides a quick guide on the installation dependencies.
 
-A set of examples are available in the [eSCAPE-demo](https://github.com/Geodels/eSCAPE-demo) repository.
+API documentation is available from the [**eSCAPE-API**](https://escape-api.github.io/index.html) website and a set of examples are available in the [**eSCAPE-demo**](https://github.com/Geodels/eSCAPE-demo) repository.
 
 The easiest way to get started is with the **Docker container**
 [https://hub.docker.com/u/geodels/](https://hub.docker.com/u/geodels/) using [Kitematic](https://docs.docker.com/kitematic/userguide/). Once **Kitematic** is installed on your computer, open it and look for **Geodels escape-docker** via the *search* menu.
