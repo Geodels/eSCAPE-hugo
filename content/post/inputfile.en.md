@@ -87,3 +87,39 @@ Finally, you will need to specify the output folder:
 + `output`: with `dir` the directory name and the option `makedir` that gives the possible to delete any existing output folder with the same name (if set to False) or to create a new folder with the give `dir` name plus a number at the end (e.g. outputDir_XX if set to True with XX the run number)
 
 ***
+
+##### Additional informations
+
+The tutorials proposed in the [eSCAPE-demo](https://github.com/Geodels/eSCAPE-demo) repository present several examples to create the required `vtk` input files (used in the input files for the domain, the climate, and the uplift) for running **eSCAPE**.   
+
+These input files are defined on an irregular triangular grid (TIN) which is created using either the [pyGmsh](https://pypi.org/project/pygmsh/) or [stripy](https://pypi.org/project/stripy/) libraries (both install on the Docker container).
+
+In case of spatial change in forcing conditions, the user needs to specify (using the `map` element) for each vertices of the TIN, a series of fields for each forcing (tectonic displacements and precipitation) at chosen time intervals.
+
+In cases where the forcing conditions are uniform over the entire domain one can chose to define its values in the YAML input file directly using the `uniform` element.
+
+Sea level position can be set at a given relative position using the `position` element or using a `curve` which is a file containing 2 columns (time and sea-level position). In this later case, sea level position at any timestep is obtained by linear interpolation between closest sea level times.  
+
+Model-domain edge boundary conditions are set using the `bc` element in the YAML input file and the following options are available:
+
+1. `flat`: edges elevations are set to the elevations of the closest non-edge vertices
+2. `fixed`: edges elevations remain at the same position during the model run  
+3. `slope`: edges elevations are defined based on the closest non-edge vertices average slope
+
+***
+
+
+##### Outputs & Paraview visualisation
+
+The model outputs are located in the output folder (`dir` element) and consist of a time series file named `eSCAPE.xdmf` and 2 other folders (`h5` and `xmf`). The **XDMF** file is the main entry point for visualising the output and should be sufficient for most users.
+
+The file can be opened with the [**Paraview**](https://www.paraview.org/download/) software.
+
+A video is provided in the [eSCAPE-demo](https://github.com/Geodels/eSCAPE-demo) repository **test/data** folder and shows how to visualise **eSCAPE** output.
+
+As shown in the video, after loading the file, we perform 2 operations:
+
+1. first we use the `wrap by scalar` filter to create a 2D representation of the surface
+2. then we define a `contour` line corresponding to the sea-level position
+
+***

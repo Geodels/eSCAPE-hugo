@@ -11,7 +11,14 @@ cover_image: "images/earthdepo1.gif"
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-To join the _eSCAPE User Group on Slack_, send an email request to: <a href="MAILTO:tristan.salles@sydney.edu.au?subject=eSCAPE User Group&body=Please send me an invite to join the eSCAPE User Group">Join eSCAPE User Group</a>
+**Contributions**
+
+We welcome all kinds of contributions! Please get in touch if you would like to help out. Everything from code to notebooks to examples and documentation are all equally valuable so please don't feel you can't contribute. To contribute please fork the project make your changes and submit a pull request. We will do our best to work through any issues with you and get your code merged into the main branch.
+
+If you found a bug, have questions, or are just having trouble with **eSCAPE**, you can:
+
+1. join the _eSCAPE User Group on Slack_ by sending an email request to: <a href="MAILTO:tristan.salles@sydney.edu.au?subject=eSCAPE User Group&body=Please send me an invite to join the eSCAPE User Group">Join eSCAPE User Group</a>
+2. open an issue in our [issue tracker](https://github.com/Geodels/eSCAPE/issues/new) and we'll try to help resolve the concern.
 
 ***
 

@@ -22,32 +22,52 @@ The easiest way to get started is with the **Docker container**
 
 If you want to install it yourself, you can follow the steps provided in the [wiki](https://github.com/Geodels/eSCAPE/wiki/Installation-on-HPC) page.
 
-##### Required libraries
+***
 
-**Scientific computing libraries:**
+#####  Compilers & packages
 
-1. [numpy](http://www.numpy.org)
-2. [scipy](https://www.scipy.org)
-3. [mpi4py](https://mpi4py.readthedocs.io/en/stable/)
-4. [petsc4py](https://petsc4py.readthedocs.io/en/stable/)
-5. fortran compiler, preferably [gfortran](https://gcc.gnu.org/wiki/GFortran)
-6. [fillit](https://github.com/Geodels/fillit)
+######  List of required compilers
 
-**Reading/Writing/Parsing libraries:**
+Numpy (1.9 and above) and a fortran compiler are required to install **eSCAPE**.
 
-1. [ruamel.yaml](https://yaml.readthedocs.io/en/latest/)
-2. [pandas](https://pandas.pydata.org)
-3. [meshio](https://github.com/nschloe/meshio)
-4. [h5py](https://www.h5py.org)
-5. [meshplex](https://github.com/nschloe/meshplex)
++ The Docker image is based on GNU compiler gfortran 4.5.0
++ The HPC installation has been tested with both GNU fortran compiler (5.4.0) and Intel-mkl ifort (18.0.1) compiler.
 
-###### Docker
+If you change the fortran compiler, you may have to define the path prior to running setup.py.
+```bash
+export F90=ifort
+cd eSCAPE
+python setup.py install --user
+```
 
-To use/test **eSCAPE** quickly, it is recommended to use the `Geodels escape-docker` image that is shipped with all the required libraries.
+###### Major.minor versions of Python
 
-[https://hub.docker.com/u/geodels/](https://hub.docker.com/u/geodels/)
+**eSCAPE** is compatible with Python version (2.7.x, 3.5.x and above). Python 2.7.11 is used within the provided Docker container and version 2.7.15 has been used for HPC installation.
 
-###### Installation
+###### Required libraries
+
+Running this code requires the following packages to be installed:
+
+**Standard packages:**
+
+1. [numpy](http://www.numpy.org) 1.9 and above
+2. [scipy](https://www.scipy.org) 0.15 and above
+3. [mpi4py](https://mpi4py.readthedocs.io/en/stable/) 3.0.0
+4. [petsc](https://www.mcs.anl.gov/petsc/download/index.html) 3.8.x and above
+5. [petsc4py](https://petsc4py.readthedocs.io/en/stable/) 3.8.x and above
+6. [h5py](https://www.h5py.org) with support for HDF5 library version 1.8.4 and above
+7. [ruamel.yaml](https://yaml.readthedocs.io/en/latest/) 0.15.70
+8. [pandas](https://pandas.pydata.org) 0.20.3 and above
+9. [meshio](https://github.com/nschloe/meshio) 2.0.3
+
+**Custom packages:**
+
+1. [meshplex](https://github.com/nschloe/meshplex) (see installation example below)
+2. [fillit](https://github.com/Geodels/fillit) (see installation example below)
+
+***
+
+##### Installation examples
 
 Once the libraries mentioned above have been installed, **eSCAPE** will need to be cloned and compiled using the following:
 
@@ -58,6 +78,26 @@ python setup.py install
 
 An example on how to install it on a _HPC server_ is provided in the [**wiki**](https://github.com/Geodels/eSCAPE/wiki/Installation-on-HPC) page.
 
+***
+
+#####  Testing eSCAPE installation
+
+The [**eSCAPE-demo**](https://github.com/Geodels/eSCAPE-demo) contains a **test** folder that provides manual steps that can be followed to check the expected functionality of the software.
+
+The **test** proposes tow comparisons related to:
+
+1. the _expected output values_ that you should be obtained if the installation is successful
+2. runtime for both _serial_ and _parallel_ simulations
+
+This test should take less than one minute. An example on how to visualise eSCAPE outputs in [**Paraview**](https://www.paraview.org/download/) is also provided.
+
+***
+
+##### Docker
+
+To use/test **eSCAPE** quickly, it is recommended to use the `Geodels escape-docker` image that is shipped with all the required libraries.
+
+[https://hub.docker.com/u/geodels/](https://hub.docker.com/u/geodels/)
 
 ***
 
