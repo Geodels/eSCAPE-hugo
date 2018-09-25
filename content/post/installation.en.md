@@ -84,7 +84,7 @@ An example on how to install it on a _HPC server_ is provided in the [**wiki**](
 
 The [**eSCAPE-demo**](https://github.com/Geodels/eSCAPE-demo) contains a **test** folder that provides manual steps that can be followed to check the expected functionality of the software.
 
-The **test** proposes tow comparisons related to:
+The **test** proposes two comparisons related to:
 
 1. the _expected output values_ that you should be obtained if the installation is successful
 2. runtime for both _serial_ and _parallel_ simulations
