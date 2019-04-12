@@ -53,7 +53,7 @@ tectonic:
     - start: 50000.
       map: ['data/inputfileparameters.vtk','T2']
 
-spl_br:
+sp_br:
     Kbr: 1.e-5
 
 sp_dep:
@@ -81,7 +81,7 @@ Follows the optional forcing conditions:
 
 Then the parameters for the surface processes to simulate:
 
-+ `spl_br`: for the _stream power law_ with a unique parameter `Kbr` representing the The erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient _m_ and _n_ are fixed in this version and take the value 0.5 & 1 respectively.
++ `sp_br`: for the _stream power law_ with a unique parameter `Kbr` representing the The erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient _m_ and _n_ are fixed in this version and take the value 0.5 & 1 respectively.
 + `diffusion`: hillslope and marine diffusion coefficients. `hillslopeK` sets the _simple creep_ transport law which states that transport rate depends linearly on topographic gradient. The marine sediment are transported based on a diffusion coefficient `sedimentK`.
 
 Finally, you will need to specify the output folder:
